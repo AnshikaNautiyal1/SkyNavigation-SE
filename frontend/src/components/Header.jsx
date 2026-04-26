@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // Icons for toggle
+import { Menu, X, LogOut } from "lucide-react"; // Icons for toggle
 
-const Header = ({ activeSection, setActiveSection }) => {
+const Header = ({ activeSection, setActiveSection, onLogout }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const sections = [
@@ -33,6 +33,14 @@ const Header = ({ activeSection, setActiveSection }) => {
                 {section.label}
               </button>
             ))}
+            
+            <button
+              onClick={onLogout}
+              className="ml-4 flex items-center space-x-1 px-4 py-2 rounded-lg transition-all font-medium bg-red-50 text-red-600 hover:bg-red-100 ring-1 ring-red-200"
+            >
+              <LogOut size={18} />
+              <span>Log out</span>
+            </button>
           </nav>
 
           {/* Mobile Menu Toggle Button */}
@@ -66,6 +74,17 @@ const Header = ({ activeSection, setActiveSection }) => {
                 {section.label}
               </button>
             ))}
+            
+            <button
+              onClick={() => {
+                onLogout();
+                setIsMobileMenuOpen(false);
+              }}
+              className="w-full flex items-center space-x-2 text-left px-4 py-2 rounded-md transition-all font-medium bg-red-50 text-red-600 hover:bg-red-100"
+            >
+              <LogOut size={18} />
+              <span>Log out</span>
+            </button>
           </div>
         )}
       </div>

@@ -6,9 +6,13 @@ import AirTrafficMap from "./pages/air_traffic";
 import Weather from "./pages/weather";
 import Contact from "./pages/Contact"; // ✅ New Import
 import ShortestRoute from "./pages/shortest_route";
+import Auth from "./components/Auth";
 import "./animations.css";
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    !!localStorage.getItem("auth_token")
+  );
   const [sourceAirport, setSourceAirport] = useState(null);
   const [destinationAirport, setDestinationAirport] = useState(null);
   const [distance, setDistance] = useState(null);
@@ -54,6 +58,10 @@ function App() {
     setActiveSection(section);
   };
 
+  if (!isAuthenticated) {
+    return <Auth onLogin={() => setIsAuthenticated(true)} />;
+  }
+
   return (
     <div className="flex flex-col h-screen w-screen bg-gray-100">
       {showSplash ? (
@@ -91,6 +99,10 @@ function App() {
           <Header
             activeSection={activeSection}
             setActiveSection={handleSectionChange}
+            onLogout={() => {
+              localStorage.removeItem("auth_token");
+              setIsAuthenticated(false);
+            }}
           />
           <div className="flex-1 flex flex-col">
             {activeSection === "distance" && (
