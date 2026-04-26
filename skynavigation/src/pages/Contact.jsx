@@ -1,38 +1,38 @@
 import React from "react";
 
 const teamMembers = [
-  {
-    name: "Dishant Dhyani",
-    image: "/images/dishant.jpg",
-    email: "dishantdhyani01@gmail.com",
-    linkedin: "https://www.linkedin.com/in/dishantdhyani01",
-    github: "https://github.com/Dishantdhyani",
+  // {
+  //   name: "Dishant Dhyani",
+  //   image: "/images/dishant.jpg",
+  //   email: "dishantdhyani01@gmail.com",
+  //   linkedin: "https://www.linkedin.com/in/dishantdhyani01",
+  //   github: "https://github.com/Dishantdhyani",
     
-  },
-  {
-    name: "Achyut Shekhar Singh",
-    image: "/images/achyut.jpg",
-    email: "achyutshekhar54@gmail.com",
-    linkedin: "https://www.linkedin.com/in/achyut-shekhar-singh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    github: "https://github.com/Achyut-shekhar",
+  // },
+  // {
+  //   name: "Achyut Shekhar Singh",
+  //   image: "/images/achyut.jpg",
+  //   email: "achyutshekhar54@gmail.com",
+  //   linkedin: "https://www.linkedin.com/in/achyut-shekhar-singh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  //   github: "https://github.com/Achyut-shekhar",
     
-  },
-  {
-    name: "Anshika Nautiyal",
-    image: "/images/anshika.jpg",
-    email: "anshika.nautiyal2005@gmail.com",
-    linkedin: "https://www.linkedin.com/in/anshika-nautiyal-04076a29b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    github: "https://github.com/AnshikaNautiyal1",
+  // },
+  // {
+  //   name: "Anshika Nautiyal",
+  //   image: "/images/anshika.jpg",
+  //   email: "anshika.nautiyal2005@gmail.com",
+  //   linkedin: "https://www.linkedin.com/in/anshika-nautiyal-04076a29b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  //   github: "https://github.com/AnshikaNautiyal1",
     
-  },
-  {
-    name: "Vaibhav Rawat",
-    image: "/images/vaibhav.jpg",
-    email: "Vaibhavrawat3182@gmail.com",
-    linkedin: "https://www.linkedin.com/in/vaibhav-rawat-61399a282/",
-    github: "https://github.com/vaibhavrawat25",
+  // },
+  // {
+  //   name: "Vaibhav Rawat",
+  //   image: "/images/vaibhav.jpg",
+  //   email: "Vaibhavrawat3182@gmail.com",
+  //   linkedin: "https://www.linkedin.com/in/vaibhav-rawat-61399a282/",
+  //   github: "https://github.com/vaibhavrawat25",
     
-  }
+  // }
 ];
 
 function Contact() {
