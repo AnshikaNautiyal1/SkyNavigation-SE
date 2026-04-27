@@ -17,7 +17,7 @@ const Auth = ({ onLogin }) => {
     const endpoint = isLogin ? "/api/auth/login" : "/api/auth/register";
 
     try {
-      const response = await axios.post(`http://localhost:5000${endpoint}`, {
+      const response = await axios.post(`http://localhost:5001${endpoint}`, {
         email,
         password,
       });
